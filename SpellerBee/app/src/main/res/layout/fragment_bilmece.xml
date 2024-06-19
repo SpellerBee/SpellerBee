@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#F7E5B7"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/img_5"
+        tools:layout_editor_absoluteX="55dp"
+        tools:layout_editor_absoluteY="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/textViewBilmece"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageView"
+        android:layout_centerHorizontal="true"
+        android:text="uzaktan baktım bir taş yanına geldim dört ayak 1 baş üstelik çok yavaş"
+        android:textSize="18sp"
+        android:layout_marginTop="64dp"
+        app:layout_constraintTop_toBottomOf="@id/imageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+
+    <Button
+        android:id="@+id/buttonCevapGoster"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="108dp"
+        android:backgroundTint="#BF9C2D"
+        android:text="Cevabı Göster"
+        app:layout_constraintEnd_toEndOf="@id/cevap"
+        app:layout_constraintHorizontal_bias="0.141"
+        app:layout_constraintStart_toStartOf="@id/cevap"
+        app:layout_constraintTop_toBottomOf="@id/cevap" />
+
+    <EditText
+        android:id="@+id/cevap"
+        android:layout_width="294dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="64dp"
+        android:hint="Cevabı Giriniz"
+        app:layout_constraintEnd_toEndOf="@id/textViewBilmece"
+        app:layout_constraintStart_toStartOf="@id/textViewBilmece"
+        app:layout_constraintTop_toBottomOf="@id/textViewBilmece"/>
+
+    <Button
+        android:id="@+id/buttonSonraki"
+        android:layout_width="wrap_content"
+        android:backgroundTint="#BF9C2D"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="108dp"
+        android:text="Sonraki"
+        app:layout_constraintEnd_toEndOf="@id/cevap"
+        app:layout_constraintHorizontal_bias="0.833"
+        app:layout_constraintStart_toStartOf="@+id/cevap"
+        app:layout_constraintTop_toBottomOf="@+id/cevap" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
